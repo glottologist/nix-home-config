@@ -61,6 +61,8 @@ in
 
   imports = [
     ./programs/sourcecontrol/default.nix
+    ./programs/terminal/default.nix
+    ./programs/editor/default.nix
 
   ];
 
