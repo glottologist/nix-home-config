@@ -5,7 +5,7 @@
 set +x
 
 # Pin Nixpkgs to NixOS unstable on June 15th of 2020
-export PINNED_NIX_PKGS="https://github.com/NixOS/nixpkgs-channels/archive/0a146054bdf.tar.gz"
+export PINNED_NIX_PKGS="https://github.com/NixOS/nixpkgs/archive/e9158eca70a.tar.gz"
 
 # Home manager - Pin to master on June 15th of 2020
 nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
