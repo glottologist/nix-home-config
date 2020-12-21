@@ -14,7 +14,6 @@ let
     dive                 # explore docker layers
     exa                  # a better `ls`
     fd                   # "find" for files
-    hms                  # custom home-manager switcher
     hyperfine            # command-line benchmarking tool
     killall              # kill processes by name
     libreoffice          # office suite
