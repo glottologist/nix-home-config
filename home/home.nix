@@ -72,7 +72,7 @@ let
     stern
   ];
   
-  fonts.fonts = with pkgs; [
+  fonts = with pkgs; [
       dejavu_fonts
       jetbrains-mono
       emacs-all-the-icons-fonts
