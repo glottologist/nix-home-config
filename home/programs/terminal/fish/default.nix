@@ -5,6 +5,16 @@ let
     set -x FZF_DEFAULT_OPTS "--preview='bat {} --color=always'" \n
     set -x SKIM_DEFAULT_COMMAND "rg --files || fd || find ."
   '';
+	ponysay = pkgs.ponysay;
+	pokemonsay = mariusnur.pokemonsay;
+	cowsay = pkgs.callPackage <mariusnur/pkgs/cowsay.nix> {packages = [mariusnur.cowsay-files];};
+	lolcat = pkgs.lolcat;
+        starship = pkgs.starship;
+	fortunefuturama = fetchzip {
+		url = "https://www.netmeister.org/apps/fortune-mod-futurama-0.2.tar.gz";
+		sha256 = "0b9zs0r2jml3cqiv5wcinhv1wmcgzk2r07wy298g08ya94x9xan6";
+	};
+	fortune = pkgs.fortune;
 
 in
 {
@@ -24,6 +34,23 @@ in
       eval (direnv hook fish)
       any-nix-shell fish --info-right | source
     '';
+
+    interactiveShellInit = ''
+			set number (random 0 10)
+			if test $number -ge 8
+				${ponysay}/bin/ponysay --ponyonly --anypony
+			else if test $number -ge 5
+				${ponysay}/bin/ponysay -q
+			else if test $number -ge 3
+				${fortune}/bin/fortune | ${pokemonsay}/bin/pokemonsay
+			else if test $number -ge 1
+				${cowsay}/bin/cowsay -f (ls ${cowsay}/share/cows | shuf -n1) (${fortune}/bin/fortune)
+			else
+				${cowsay}/bin/cowsay -f zoidberg (${fortune}/bin/fortune ${fortunefuturama}/futurama)
+ 			end
+                        source ("${starship}/bin/starship" init fish --print-full-init | psub)
+		'';
+
     shellAliases = {
       cat  = "bat";
       dc   = "docker-compose";
@@ -49,18 +76,7 @@ in
       tls = "tmux ls ";
       ta = "tmux attach ";
     };
-    shellInit =
- ''
-     # nix
-     if test -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
-         fenv source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
-     end
-
-     # home-manager
-     if test -e <nix_file_path_file>
-         fenv source <nix_file_path_file>
-     end
- '' + fzfConfig ;
+    shellInit = fzfConfig ;
   };
 
 }
