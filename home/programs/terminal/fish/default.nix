@@ -63,5 +63,4 @@ in
  '' + fzfConfig ;
   };
 
-  xdg.configFile."fish/functions/fish_prompt.fish".text = fishPlugins.prompt;
 }
