@@ -41,6 +41,15 @@ in
       mfix = "mill mono.__.fix --rules OrganizeImports && mill mono._.reformat";
       ".." = "cd ..";
       ping = "prettyping";
+      k = "kubectl ";
+      kcc = "kubectl config current-context ";
+      kdp = "kubectl delete po ";
+      kgc = "kubectl config get-contexts ";
+      kge = "kubectl get events --sort-by='\'{.lastTimestamp}'\' ";
+      kgp = "kubectl get po ";
+      kl = "kubectl logs ";
+      kpf = "kubectl port-forward ";
+      ksc = "kubectl config use-context ";
     };
     shellInit = fishConfig;
   };
