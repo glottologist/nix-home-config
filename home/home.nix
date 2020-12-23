@@ -59,6 +59,9 @@ let
     nix-tree                # visualize nix dependencies
   ];
 
+ kubePkgs = with pkgs; [
+     kubectl
+  ];
 
 in
 {
@@ -69,6 +72,7 @@ in
     ./programs/sourcecontrol/default.nix
     ./programs/terminal/default.nix
     ./programs/editor/default.nix
+    ./programs/cloud/default.nix
 
   ];
 
@@ -79,7 +83,7 @@ in
     stateVersion  = "20.09";
 
 
-    packages = defaultPkgs ++ gitPkgs  ++ haskellPkgs ++ nodejsPkgs;
+    packages = defaultPkgs ++ gitPkgs  ++ haskellPkgs ++ nodejsPkgs ++ kubePkgs;
 
     sessionVariables = {
       DISPLAY = ":0";
