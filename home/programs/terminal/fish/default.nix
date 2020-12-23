@@ -6,26 +6,20 @@ let
     set -x SKIM_DEFAULT_COMMAND "rg --files || fd || find ."
   '';
 
-  themeConfig = ''
-    set -g theme_display_date no
-    set -g theme_nerd_fonts yes
-    set -g theme_display_git_master_branch no
-    set -g theme_nerd_fonts yes
-    set -g theme_newline_cursor yes
-    set -g theme_color_scheme solarized
-  '';
-
-  fishPlugins = pkgs.callPackage ./plugins.nix {};
-
-  fishConfig = ''
-    bind \t accept-autosuggestion
-    set fish_greeting
-  '' + fzfConfig + themeConfig;
 in
 {
   programs.fish = {
     enable = true;
-    plugins = [ fishPlugins.theme ];
+    plugins = [{
+     name="foreign-env";
+     src = pkgs.fetchFromGitHub {
+         owner = "oh-my-fish";
+         repo = "plugin-foreign-env";
+         rev = "dddd9213272a0ab848d474d0cbde12ad034e65bc";
+         sha256 = "00xqlyl3lffc5l0viin1nyp819wf81fncqyz87jx8ljjdhilmgbs";
+     };
+ }];
+
     promptInit = ''
       eval (direnv hook fish)
       any-nix-shell fish --info-right | source
@@ -55,7 +49,18 @@ in
       tls = "tmux ls ";
       ta = "tmux attach ";
     };
-    shellInit = fishConfig;
+    shellInit =
+ ''
+     # nix
+     if test -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+         fenv source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+     end
+
+     # home-manager
+     if test -e <nix_file_path_file>
+         fenv source <nix_file_path_file>
+     end
+ '' + fzfConfig ;
   };
 
   xdg.configFile."fish/functions/fish_prompt.fish".text = fishPlugins.prompt;
