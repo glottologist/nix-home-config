@@ -1,4 +1,4 @@
-{ fontSize, pkgs, ... }:
+{  pkgs, ... }:
 
 {
   programs.alacritty = {
@@ -21,7 +21,7 @@
           family = "FiraCode";
           style = "Medium";
         };
-        size = fontSize;
+        size = 8;
       };
       selection.save_to_clipboard = true;
       shell.program = "${pkgs.fish}/bin/fish";
