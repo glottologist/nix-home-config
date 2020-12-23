@@ -58,8 +58,6 @@ in
     };
     shellInit = fzfConfig ;
   };
-home.packages = [
-		lolcat pokemonsay cowsay ponysay fortune
-	];
+
 
 }
