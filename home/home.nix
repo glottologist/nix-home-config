@@ -59,8 +59,17 @@ let
     nix-tree                # visualize nix dependencies
   ];
 
- kubePkgs = with pkgs; [
+  kubePkgs = with pkgs; [
      kubectl
+     kubectx
+     k9s
+     popeye
+    cloudfoundry-cli
+    awscli
+    azure-cli
+    google-cloud-sdk
+  #  openshift-origin
+    stern
   ];
 
 in
@@ -72,7 +81,6 @@ in
     ./programs/sourcecontrol/default.nix
     ./programs/terminal/default.nix
     ./programs/editor/default.nix
-    ./programs/cloud/default.nix
 
   ];
 
