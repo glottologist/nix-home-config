@@ -72,22 +72,27 @@ let
     stern
   ];
   
-  fonts = with pkgs; [
+  fonts.fonts = with pkgs; [
       dejavu_fonts
+      jetbrains-mono
       emacs-all-the-icons-fonts
       emojione
       fantasque-sans-mono
       fira-code
+      fira-code-symbols
       font-awesome-ttf
       google-fonts
       hack-font
       hasklig
       iosevka
       noto-fonts-emoji
-      powerline-fonts
       material-icons
-      powerline-fonts
       cascadia-code
+      noto-fonts
+      noto-fonts-cjk
+      noto-fonts-emoji
+      proggyfonts
+       (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
     ];
 
 in
