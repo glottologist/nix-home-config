@@ -71,6 +71,7 @@ let
   #  openshift-origin
     stern
   ];
+  
 
 
 in
@@ -98,6 +99,27 @@ in
       DISPLAY = ":0";
       EDITOR = "nvim";
     };
+  };
+
+ fonts = {
+    enableFontDir = true;
+    fonts = with pkgs; [
+      dejavu_fonts
+      emacs-all-the-icons-fonts
+      emojione
+      fantasque-sans-mono
+      fira-code
+      font-awesome-ttf
+      google-fonts
+      hack-font
+      hasklig
+      iosevka
+      noto-fonts-emoji
+      powerline-fonts
+      material-icons
+      powerline-fonts
+      cascadia-code
+    ];
   };
 
 
