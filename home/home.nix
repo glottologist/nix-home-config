@@ -72,7 +72,23 @@ let
     stern
   ];
   
-
+  fonts = with pkgs; [
+      dejavu_fonts
+      emacs-all-the-icons-fonts
+      emojione
+      fantasque-sans-mono
+      fira-code
+      font-awesome-ttf
+      google-fonts
+      hack-font
+      hasklig
+      iosevka
+      noto-fonts-emoji
+      powerline-fonts
+      material-icons
+      powerline-fonts
+      cascadia-code
+    ];
 
 in
 {
@@ -93,7 +109,7 @@ in
     stateVersion  = "20.09";
 
 
-    packages = defaultPkgs ++ gitPkgs  ++ haskellPkgs ++ nodejsPkgs ++ kubePkgs;
+    packages = defaultPkgs ++ gitPkgs  ++ haskellPkgs ++ nodejsPkgs ++ kubePkgs ++ fonts;
 
     sessionVariables = {
       DISPLAY = ":0";
@@ -101,26 +117,8 @@ in
     };
   };
 
- fonts = {
-    enableFontDir = true;
-    fonts = with pkgs; [
-      dejavu_fonts
-      emacs-all-the-icons-fonts
-      emojione
-      fantasque-sans-mono
-      fira-code
-      font-awesome-ttf
-      google-fonts
-      hack-font
-      hasklig
-      iosevka
-      noto-fonts-emoji
-      powerline-fonts
-      material-icons
-      powerline-fonts
-      cascadia-code
-    ];
-  };
+  
+  
 
 
 }
