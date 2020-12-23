@@ -14,10 +14,11 @@
     ./htop/default.nix
     ./aria2/default.nix
     ./mcfly/default.nix
-    ./mcflsdly/default.nix   
+    ./lorri/default.nix   
+    ./lsd/default.nix   
     ./newsboat/default.nix   
-   ./pet/default.nix 
-      ./taskwarrior/default.nix 
+    ./pet/default.nix 
+    ./taskwarrior/default.nix 
   ];
 
 }
