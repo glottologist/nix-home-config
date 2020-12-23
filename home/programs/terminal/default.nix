@@ -5,7 +5,7 @@
   imports = [
     ./tmux/default.nix
     ./fish/default.nix
-    ./alacritty/default.nix
+    ./alacritty/default.nix { fontSize = 8; inherit pkgs; };
     ./broot/default.nix
     ./bat/default.nix
     ./direnv/default.nix
