@@ -11,7 +11,7 @@
     awscli
     azure-cli
     google-cloud-sdk
-    openshift-origin
+  #  openshift-origin
     stern
   ];
 
