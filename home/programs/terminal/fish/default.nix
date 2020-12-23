@@ -50,6 +50,10 @@ in
       kl = "kubectl logs ";
       kpf = "kubectl port-forward ";
       ksc = "kubectl config use-context ";
+      v = "nvim ";
+      t = "tmux ";
+      tls = "tmux ls ";
+      ta = "tmux attach ";
     };
     shellInit = fishConfig;
   };
