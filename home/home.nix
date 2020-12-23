@@ -37,6 +37,11 @@ let
     binutils-unwrapped
   ];
 
+  nodejsPkgs = with pkgs; [
+    nodejs-15_x # nodejs
+  ];
+
+
   gitPkgs = with pkgs.gitAndTools; [
     diff-so-fancy # git diff with colors
     git-crypt     # git files encryption
@@ -74,7 +79,7 @@ in
     stateVersion  = "20.09";
 
 
-    packages = defaultPkgs ++ gitPkgs  ++ haskellPkgs;
+    packages = defaultPkgs ++ gitPkgs  ++ haskellPkgs ++ nodejsPkgs;
 
     sessionVariables = {
       DISPLAY = ":0";
