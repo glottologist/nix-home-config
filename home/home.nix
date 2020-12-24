@@ -79,7 +79,9 @@ let
       emojione
       fantasque-sans-mono
       fira-code
+      fira-mono
       fira-code-symbols
+      nerdfonts
       font-awesome-ttf
       google-fonts
       hack-font
@@ -119,6 +121,7 @@ in
     sessionVariables = {
       DISPLAY = ":0";
       EDITOR = "nvim";
+      SHELL = "fish";
     };
   };
 
