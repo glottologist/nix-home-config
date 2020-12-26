@@ -6,6 +6,7 @@ let
 
   defaultPkgs = with pkgs; [
     jq
+    niv
     act                  # run github actions locally
     any-nix-shell        # fish support for nix shell
     bottom               # alternative to htop & ytop
