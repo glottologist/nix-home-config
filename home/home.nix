@@ -49,15 +49,7 @@ let
     tig           # diff and commit view
   ];
 
-  haskellPkgs = with pkgs.haskellPackages; [
-    brittany                # code formatter
-    cabal2nix               # convert cabal projects to nix
-    cabal-install           # package manager
-    ghc                     # compiler
-    haskell-language-server # haskell IDE (ships with ghcide)
-    hoogle                  # documentation
-    nix-tree                # visualize nix dependencies
-  ];
+
 
   kubePkgs = with pkgs; [
      kubectl
@@ -106,7 +98,7 @@ in
     ./programs/sourcecontrol/default.nix
     ./programs/terminal/default.nix
     ./programs/editor/default.nix
-
+    ./programs/languages/default.nix
   ];
 
 
@@ -116,7 +108,7 @@ in
     stateVersion  = "20.09";
 
 
-    packages = defaultPkgs ++ gitPkgs  ++ haskellPkgs ++ nodejsPkgs ++ kubePkgs ++ fonts;
+    packages = defaultPkgs ++ gitPkgs ++ nodejsPkgs ++ kubePkgs ++ fonts;
 
     sessionVariables = {
       DISPLAY = ":0";

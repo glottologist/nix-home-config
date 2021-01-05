@@ -4,7 +4,6 @@
 
   imports = [
     ./tmux/default.nix
-    ./fish/default.nix
     ./alacritty/default.nix 
     ./broot/default.nix
     ./bat/default.nix
@@ -19,6 +18,8 @@
     ./newsboat/default.nix   
     ./pet/default.nix 
     ./taskwarrior/default.nix 
+    ./fish/default.nix
+    ./tmate/default.nix
   ];
 
 }
