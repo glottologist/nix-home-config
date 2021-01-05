@@ -64,7 +64,7 @@ settings = {
 
     golang.symbol = " ";
   
-    haskell.symbol = "λ "
+    haskell.symbol = "λ ";
 
     hg_branch.symbol = " ";
 
