@@ -61,7 +61,11 @@ in
       t = "tmux ";
       tls = "tmux ls ";
       ta = "tmux attach ";
-      hy = "history"
+      hy = "history";
+      gp = "git pull";
+      gc = "git commit -am ";
+      gpl = "git push";
+      gpt = "git push --tags";
     };
     shellInit = fzfConfig ;
    
