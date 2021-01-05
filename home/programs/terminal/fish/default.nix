@@ -63,7 +63,7 @@ in
       ta = "tmux attach ";
     };
     shellInit = fzfConfig ;
-    xdg.configFile."fish/functions".source = ./functions;
+   
   };
 
 
