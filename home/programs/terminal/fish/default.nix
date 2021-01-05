@@ -45,6 +45,7 @@ in
       k = "kubectl ";
       kcc = "kubectl config current-context ";
       kdp = "kubectl delete po ";
+      kgn = "kubectl get nodes";
       kgc = "kubectl config get-contexts ";
       kge = "kubectl get events --sort-by='\'{.lastTimestamp}'\' ";
       kgp = "kubectl get po ";
