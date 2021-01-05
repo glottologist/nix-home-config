@@ -61,6 +61,7 @@ in
       t = "tmux ";
       tls = "tmux ls ";
       ta = "tmux attach ";
+      hy = "history"
     };
     shellInit = fzfConfig ;
    

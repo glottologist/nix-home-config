@@ -12,7 +12,6 @@ nix-channel --add https://github.com/nix-community/home-manager/archive/master.t
 nix-channel --update
 export NIX_PATH=$HOME/.nix-defexpr/channels${NIX_PATH:+:}$NIX_PATH
 
-cp -r home/* $HOME/.config/nixpkgs/
 
 # Home manager
 mkdir -p $HOME/.config/nixpkgs/

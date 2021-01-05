@@ -65,11 +65,11 @@ let
   ];
   
   fonts = with pkgs; [
-      dejavu_fonts
+      # dejavu_fonts
       jetbrains-mono
-      emacs-all-the-icons-fonts
-      emojione
-      fantasque-sans-mono
+      # emacs-all-the-icons-fonts
+      # emojione
+      # fantasque-sans-mono
       fira-code
       fira-mono
       fira-code-symbols
@@ -77,15 +77,15 @@ let
       font-awesome-ttf
       google-fonts
       hack-font
-      hasklig
-      iosevka
-      noto-fonts-emoji
-      material-icons
+      # hasklig
+      # iosevka
+      # noto-fonts-emoji
+      # material-icons
       cascadia-code
-      noto-fonts
-      noto-fonts-cjk
-      noto-fonts-emoji
-      proggyfonts
+      # noto-fonts
+      # noto-fonts-cjk
+      # noto-fonts-emoji
+      # proggyfonts
        (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
     ];
 
