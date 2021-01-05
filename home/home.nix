@@ -33,7 +33,6 @@ let
     tldr                 # summary of a man page
     tree                 # display files in a tree view
     xclip                # clipboard support (also for neovim)
-    dos2unix
     # fixes the `ar` error required by cabal
     binutils-unwrapped
   ];
