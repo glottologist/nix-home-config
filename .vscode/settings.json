@@ -1,5 +1,7 @@
 {
     "files.watcherExclude": {
         "**/target": true
-    }
+    },
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "editor.fontLigatures": true
 }

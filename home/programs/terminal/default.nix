@@ -18,6 +18,7 @@
     ./newsboat/default.nix   
     ./pet/default.nix 
     ./taskwarrior/default.nix 
+    ./starship/default.nix
     ./fish/default.nix
     ./tmate/default.nix
   ];
