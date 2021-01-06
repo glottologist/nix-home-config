@@ -37,6 +37,7 @@ in
 		'';
 
     shellAliases = {
+      setmtu = "sudo ip link set dev eth0 mtu 1350"; 
       cat  = "bat";
       dc   = "docker-compose";
       dps  = "docker-compose ps";
@@ -51,12 +52,15 @@ in
       kcc = "kubectl config current-context ";
       kdp = "kubectl delete po ";
       kgn = "kubectl get nodes";
+      kdn = "kubectl describe node ";
       kgc = "kubectl config get-contexts ";
       kge = "kubectl get events --sort-by='\'{.lastTimestamp}'\' ";
       kgp = "kubectl get po ";
       kl = "kubectl logs ";
       kpf = "kubectl port-forward ";
       ksc = "kubectl config use-context ";
+      kx = "kubectx ";
+      kn = "kubens ";
       v = "nvim ";
       t = "tmux ";
       tls = "tmux ls ";
