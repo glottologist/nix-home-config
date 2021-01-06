@@ -56,7 +56,7 @@ in
       kgp = "kubectl get po ";
       kl = "kubectl logs ";
       kpf = "kubectl port-forward ";
-      kcp = "kubectl cp "
+      kcp = "kubectl cp ";
       kx = "kubectx ";
       kn = "kubens ";
       v = "nvim ";
