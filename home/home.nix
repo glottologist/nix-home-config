@@ -10,7 +10,7 @@ let
     act                  # run github actions locally
     any-nix-shell        # fish support for nix shell
     bottom               # alternative to htop & ytop
-    cachix               # nix caching
+   #cachix               # nix caching
     dconf2nix            # dconf (gnome) files to nix converter
     docker-compose       # docker manager
     dive                 # explore docker layers
