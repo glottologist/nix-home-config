@@ -49,16 +49,14 @@ in
       ".." = "cd ..";
       ping = "prettyping";
       k = "kubectl ";
-      kcc = "kubectl config current-context ";
       kdp = "kubectl delete po ";
       kgn = "kubectl get nodes";
       kdn = "kubectl describe node ";
-      kgc = "kubectl config get-contexts ";
       kge = "kubectl get events --sort-by='\'{.lastTimestamp}'\' ";
       kgp = "kubectl get po ";
       kl = "kubectl logs ";
       kpf = "kubectl port-forward ";
-      ksc = "kubectl config use-context ";
+      kcp = "kubectl cp "
       kx = "kubectx ";
       kn = "kubens ";
       v = "nvim ";
