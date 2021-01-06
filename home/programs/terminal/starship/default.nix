@@ -106,7 +106,7 @@ settings = {
 
     time = {
       disabled = false;
-      format = "%R";
+     
     };
 
     username.style_user = "bold blue";
