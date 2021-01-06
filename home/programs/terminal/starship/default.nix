@@ -76,7 +76,7 @@ settings = {
 
     # Disable because it includes cached memory so memory is reported as full a lot
     memory_usage = {
-      disabled = true;
+      disabled = false;
       symbol = " ";
       threshold = 90;
     };
@@ -105,7 +105,7 @@ settings = {
     swift.symbol = "ﯣ ";
 
     time = {
-      disabled = true;
+      disabled = false;
       format = "%R";
     };
 
