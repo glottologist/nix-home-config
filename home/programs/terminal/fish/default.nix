@@ -49,11 +49,11 @@ in
       ".." = "cd ..";
       ping = "prettyping";
       k = "kubectl ";
-      kdp = "kubectl delete po ";
+      kdp = "kubectl delete pod ";
       kgn = "kubectl get nodes";
       kdn = "kubectl describe node ";
       kge = "kubectl get events --sort-by='\'{.lastTimestamp}'\' ";
-      kgp = "kubectl get po ";
+      kgp = "kubectl get pod ";
       kl = "kubectl logs ";
       kpf = "kubectl port-forward ";
       kcp = "kubectl cp ";

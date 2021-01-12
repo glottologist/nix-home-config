@@ -2,7 +2,7 @@ filetype off
 
 " Leader & Shell
 let mapleader=','
-set shell=/run/current-system/sw/bin/fish
+set shell=$(which fish)
 
 " Better Unix support
 set viewoptions=folds,options,cursor,unix,slash
