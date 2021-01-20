@@ -28,6 +28,8 @@ let
     nerdtree-git-plugin     # shows files git status on the NerdTree
     quickfix-reflector-vim  # make modifications right in the quickfix window
     rainbow_parentheses-vim # for nested parentheses
+    goyo                    # Full Screen Writing
+    vim-markdown            # Markdown plugin
     tender-vim              # a clean dark theme
     vim-airline             # bottom status bar
     vim-airline-themes
