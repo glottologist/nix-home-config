@@ -45,6 +45,7 @@ in
       du   = "ncdu --color dark -rr -x";
       ls   = "exa";
       ll   = "ls -a";
+      lar  = "ls -laR";
       mfix = "mill mono.__.fix --rules OrganizeImports && mill mono._.reformat";
       ".." = "cd ..";
       ping = "prettyping";
