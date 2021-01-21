@@ -7,11 +7,11 @@ in
 {
   programs.tmux = {
     enable = true;
-    aggressiveResize = true;
-    baseIndex = 1;
-    extraConfig = tmuxConf;
-    escapeTime = 0;
-    keyMode = "vi";
+    # aggressiveResize = true;
+    # baseIndex = 1;
+    # extraConfig = tmuxConf;
+    # escapeTime = 0;
+    # keyMode = "vi";
     # plugins = with plugins; [
     #   cpu
     #   nord # theme
@@ -27,7 +27,7 @@ in
     #     '';
     #   }
     # ];
-    shortcut = "a";
-    terminal = "screen-256color";
+    # shortcut = "a";
+    # terminal = "screen-256color";
   };
 }
