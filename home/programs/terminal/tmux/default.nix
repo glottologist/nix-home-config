@@ -9,7 +9,7 @@ in
     enable = true;
     # aggressiveResize = true;
     # baseIndex = 1;
-    # extraConfig = tmuxConf;
+    extraConfig = "";
     # escapeTime = 0;
     # keyMode = "vi";
     # plugins = with plugins; [
