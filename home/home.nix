@@ -113,7 +113,7 @@ in
     sessionVariables = {
       DISPLAY = ":0";
       EDITOR = "nvim";
-      SHELL = "fish";
+      SHELL = "zsh";
     };
   };
 
