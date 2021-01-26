@@ -12,6 +12,7 @@ in
     extraConfig = tmuxConf;
     escapeTime = 0;
     keyMode = "vi";
+    secureSocket = false;
     #plugins = with plugins; [
     #  cpu
     #  nord # theme
