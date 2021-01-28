@@ -82,7 +82,7 @@ in
       gpl = "git push";
       gpt = "git push --tags";
     };
-    shellInit = fzfConfig ;
+    #shellInit = fzfConfig ;
    
   };
 
