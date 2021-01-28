@@ -13,21 +13,21 @@ in
     escapeTime = 0;
     keyMode = "vi";
     secureSocket = false;
-    #plugins = with plugins; [
-    #  cpu
-    #  nord # theme
-    #  {
-    #    plugin = resurrect;
-    #    extraConfig = "set -g @resurrect-strategy-nvim 'session'";
-    #  }
-    #  {
-    #    plugin = continuum;
-    #    extraConfig = ''
-    #      set -g @continuum-restore 'on'
-    #      set -g @continuum-save-interval '60' # minutes
-    #    '';
-    #  }
-    #]
+     plugins = with plugins; [
+       cpu
+       nord # theme
+       {
+         plugin = resurrect;
+         extraConfig = "set -g @resurrect-strategy-nvim 'session'";
+       }
+       {
+         plugin = continuum;
+         extraConfig = ''
+           set -g @continuum-restore 'on'
+           set -g @continuum-save-interval '60' # minutes
+         '';
+       }
+     ]
     shortcut = "a";
     terminal = "screen-256color";
   };

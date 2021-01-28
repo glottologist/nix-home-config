@@ -29,7 +29,7 @@ in
     enable = true;
     autocd = true;
     dotDir = ".config/zsh";
-    enableAutosuggestion = true;
+    enableAutosuggestions = true;
     enableCompletion = true;
     plugins = [{
         name = "zsh-nix-shell";
