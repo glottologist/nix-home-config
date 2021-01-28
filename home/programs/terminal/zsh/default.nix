@@ -42,10 +42,6 @@ in
  }
  ];
 
-   initExtra = ''
-      eval (direnv hook zsh)
-      any-nix-shell zsh --info-right | source
-    '';
 
 
     shellAliases = {

@@ -19,6 +19,7 @@
     ./pet/default.nix 
     ./taskwarrior/default.nix 
     ./starship/default.nix
+    ./fish/default.nix
     ./zsh/default.nix
     ./tmate/default.nix
   ];
