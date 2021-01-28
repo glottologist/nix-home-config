@@ -27,6 +27,10 @@ in
 
   programs.zsh = {
     enable = true;
+    autocd = true;
+    dotDir = ".config/zsh";
+    enableAutosuggestion = true;
+    enableCompletion = true;
     plugins = [{
         name = "zsh-nix-shell";
         src = zshnixshell;
@@ -38,10 +42,10 @@ in
  }
  ];
 
-   #promptInit = ''
-   #  eval (direnv hook zsh)
-   #  any-nix-shell zsh --info-right | source
-   #'';
+   initExtra = ''
+      eval (direnv hook zsh)
+      any-nix-shell zsh --info-right | source
+    '';
 
 
     shellAliases = {
