@@ -66,7 +66,7 @@ let
   
   fonts = with pkgs; [
       # dejavu_fonts
-      jetbrains-mono
+      #jetbrains-mono
       # emacs-all-the-icons-fonts
       # emojione
       # fantasque-sans-mono
