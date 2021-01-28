@@ -27,7 +27,7 @@ in
            set -g @continuum-save-interval '60' # minutes
          '';
        }
-     ]
+     ];
     shortcut = "a";
     terminal = "screen-256color";
   };
