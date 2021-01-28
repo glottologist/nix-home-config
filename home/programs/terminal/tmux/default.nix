@@ -13,7 +13,7 @@ in
     escapeTime = 0;
     keyMode = "vi";
     secureSocket = false;
-     plugins = with plugins; [
+    plugins = with plugins; [
        cpu
        nord # theme
        {
