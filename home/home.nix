@@ -35,6 +35,8 @@ let
     xclip                # clipboard support (also for neovim)
     # fixes the `ar` error required by cabal
     binutils-unwrapped
+    mop
+    aerc
   ];
 
   nodejsPkgs = with pkgs; [
@@ -113,7 +115,7 @@ in
     sessionVariables = {
       DISPLAY = ":0";
       EDITOR = "nvim";
-      SHELL = "zsh";
+      SHELL = "fish";
     };
   };
 
