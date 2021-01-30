@@ -18,14 +18,12 @@ let
     fd                   # "find" for files
     hyperfine            # command-line benchmarking tool
     killall              # kill processes by name
-    libreoffice          # office suite
     libnotify            # notify-send command
     ncdu                 # disk space info (a better du)
     neofetch             # command-line system information
     nix-doc              # nix documentation search tool
     nyancat              # the famous rainbow cat!
     manix                # documentation searcher for nix
-    mupdf                # pdf viewer with vim-like keybindings
     prettyping           # a nicer ping
     ripgrep              # fast grep
     rnix-lsp             # nix lsp server
