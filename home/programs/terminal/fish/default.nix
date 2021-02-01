@@ -50,7 +50,7 @@ in
       ".." = "cd ..";
       ping = "prettyping";
       k = "kubectl ";
-      h = "history"
+      h = "history";
       kdp = "kubectl delete pod ";
       kgn = "kubectl get nodes";
       kdn = "kubectl describe node ";
