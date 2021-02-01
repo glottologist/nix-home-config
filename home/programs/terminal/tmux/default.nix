@@ -2,7 +2,7 @@
 
 let
   plugins  = pkgs.tmuxPlugins // pkgs.callPackage ./custom-plugins.nix {};
-  tmuxConf = builtins.readFile ./simple.conf;
+  tmuxConf = builtins.readFile ./default.conf;
 in
 {
   programs.tmux = {
