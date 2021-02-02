@@ -1,7 +1,7 @@
 filetype off
 
 " Leader & Shell
-let mapleader=','
+let mapleader=' '
 " set shell=$(which fish)
 
 " Better Unix support

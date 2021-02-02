@@ -46,13 +46,17 @@ let
     vim-scala               # scala plugin
     vim-surround            # quickly edit surroundings (brackets, html tags, etc)
     vim-tmux                # syntax highlighting for tmux conf file and more
+    vim-hdevtools           # Type assistence for Haskell
+    vim-syntastic           # Syntax checker for languages
+    ghc-mod-vim             # Command line tool to analyse haskell source
   ] ++ overriddenPlugins;
 
   baseConfig    = builtins.readFile ./config.vim;
   cocConfig     = builtins.readFile ./coc.vim;
   cocSettings   = builtins.toJSON (import ./coc-settings.nix);
   pluginsConfig = builtins.readFile ./plugins.vim;
-  vimConfig     = baseConfig + pluginsConfig + cocConfig;
+  haskellConfig = builtins.readFile ./haskell.vim;
+  vimConfig     = baseConfig + pluginsConfig + cocConfig + haskellConfig;
 
   # neovim-5 nightly stuff
   neovim-5     = pkgs.callPackage ./dev/nightly.nix {};

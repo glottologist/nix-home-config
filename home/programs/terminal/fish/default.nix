@@ -70,6 +70,7 @@ in
       gc = "git commit -am ";
       gpl = "git push";
       gpt = "git push --tags";
+      pullall = "find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;";
     };
     shellInit = fzfConfig ;
    
