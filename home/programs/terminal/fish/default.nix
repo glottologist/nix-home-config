@@ -68,8 +68,9 @@ in
       hy = "history";
       gp = "git pull";
       gc = "git commit -am ";
-      gpl = "git push";
+      gps = "git push";
       gpt = "git push --tags";
+      gs = "git status";
       pullall = "find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;";
     };
     shellInit = fzfConfig ;
