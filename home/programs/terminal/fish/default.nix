@@ -64,6 +64,9 @@ in
       v = "nvim ";
       t = "tmux ";
       tls = "tmux ls ";
+      tns = "tmux new-session -s ";
+      tas = "tmux attach -t ";
+      tks = "tmux kill-session -t ";
       ta = "tmux attach ";
       hy = "history";
       gp = "git pull";
