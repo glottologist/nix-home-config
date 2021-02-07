@@ -62,7 +62,7 @@
       url    = "https://github.com/iamcco/markdown-preview.nvim/releases/download/v0.0.9/markdown-preview-linux.tar.gz";
       sha256 = "9FAF65A815D377D009149480B80509A439D3F623011B7BE694E268DD220BAD65";
     };
-  }
+  };
 
 
 }
