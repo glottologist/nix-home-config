@@ -110,3 +110,6 @@ let g:vim_markdown_frontmatter = 1  " for YAML format
 augroup pandoc_syntax
     au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
 augroup END
+
+
+nnoremap <M-m> :MarkdownPreview<CR>
