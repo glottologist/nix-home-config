@@ -31,6 +31,7 @@ let
     goyo                    # Full Screen Writing
     vim-markdown            # Markdown plugin
     tender-vim              # a clean dark theme
+    tabular
     vim-airline             # bottom status bar
     vim-airline-themes
     vim-css-color           # preview css colors
@@ -40,15 +41,20 @@ let
     vim-fish                # fish shell highlighting
     vim-fugitive            # git plugin
     vim-gtfo                # go to terminal or file manager
+    vim-json 
+    markdown-preview
     vim-nix                 # nix support (highlighting, etc)
+    vim-pandoc-syntax       # Pandoc syntax highlighting for Markdown
     vim-repeat              # repeat plugin commands with (.)
     vim-ripgrep             # blazing fast search using ripgrep
     vim-scala               # scala plugin
     vim-surround            # quickly edit surroundings (brackets, html tags, etc)
+    vim-snippets
     vim-tmux                # syntax highlighting for tmux conf file and more
     vim-hdevtools           # Type assistence for Haskell
     syntastic           # Syntax checker for languages
     ghc-mod-vim             # Command line tool to analyse haskell source
+    ultisnips
   ] ++ overriddenPlugins;
 
   baseConfig    = builtins.readFile ./config.vim;

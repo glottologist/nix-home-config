@@ -82,3 +82,31 @@ let g:lightline = { 'colorscheme': 'material_vim' }
 " FZF Hoogle
 let g:hoogle_fzf_cache_file = '~/.cache/fzf-hoogle/cache.json'
 nnoremap <leader>h :Hoogle <CR>
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"  " use <Tab> to trigger autocompletion
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsExpandTrigger="<C-J>"
+
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
+
+"  Markdown Syntax Highlighting
+" disable header folding
+let g:vim_markdown_folding_disabled = 1
+
+" do not use conceal feature, the implementation is not so good
+let g:vim_markdown_conceal = 0
+
+" disable math tex conceal feature
+let g:tex_conceal = ""
+let g:vim_markdown_math = 1
+
+" support front matter of various format
+let g:vim_markdown_frontmatter = 1  " for YAML format
+
+augroup pandoc_syntax
+    au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+augroup END
