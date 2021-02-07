@@ -60,7 +60,7 @@
     src = builtins.fetchTarball {
       name   = "markdown-preview-nvim-v0.0.9";
       url    = "https://github.com/iamcco/markdown-preview.nvim/releases/download/v0.0.9/markdown-preview-linux.tar.gz";
-      sha256 = "9FAF65A815D377D009149480B80509A439D3F623011B7BE694E268DD220BAD65";
+      sha256 = "0sjjj9z1dhilhpc8pq4154czrb79z9cm044jvn75kxcjv6v5l2m5";
     };
   };
 
