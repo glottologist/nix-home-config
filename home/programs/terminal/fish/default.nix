@@ -75,6 +75,13 @@ in
       gpt = "git push --tags";
       gs = "git status";
       pullall = "find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;";
+      art = "cd ~/documents/articles";
+      lang = "cd ~/documents/languages";
+      glot = "cd ~/development/glottologist";
+      ont = "cd ~/development/ontologi";
+      int = "cd ~/development/intendaglobal";
+      ref = "cd ~/development/reference";
+
     };
     shellInit = fzfConfig ;
    
