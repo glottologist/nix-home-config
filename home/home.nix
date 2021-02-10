@@ -35,6 +35,8 @@ let
     binutils-unwrapped
     mop
     aerc
+    ansible
+    dos2unix
   ];
 
   nodejsPkgs = with pkgs; [
