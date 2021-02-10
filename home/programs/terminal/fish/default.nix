@@ -71,6 +71,7 @@ in
       hy = "history";
       gp = "git pull";
       gc = "git commit -am ";
+      gco = "git checkout ";
       gps = "git push";
       gpt = "git push --tags";
       gs = "git status";
