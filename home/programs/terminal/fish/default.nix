@@ -70,11 +70,13 @@ in
       ta = "tmux attach ";
       hy = "history";
       gp = "git pull";
+      gcl = "git clone ";
       gc = "git commit -am ";
       gco = "git checkout ";
       gps = "git push";
       gpt = "git push --tags";
       gs = "git status";
+      gd = "git diff ";
       pullall = "find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;";
       art = "cd ~/documents/articles";
       lang = "cd ~/documents/languages";
