@@ -67,7 +67,12 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " NerdTree Deleting Files
 let g:NERDTreeAutoDeleteBuffer = 1 
 
-
+" Telescope
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
@@ -78,13 +83,13 @@ nmap ga <Plug>(EasyAlign)
 " Fuzzy finder shortcut
 nnoremap <C-p> :FZF<CR>
 
-command! -bang -nargs=* Rg
-  \ call fzf#vim#grep(
-  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
-  \   fzf#vim#with_preview(), <bang>0)
+" command! -bang -nargs=* Rg
+"  \ call fzf#vim#grep(
+"  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+"  \   fzf#vim#with_preview(), <bang>0)
 
-command! -bang -nargs=? -complete=dir Files
-    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+" command! -bang -nargs=? -complete=dir Files
+"    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
 " vim-scala
 au BufRead,BufNewFile *.sbt set filetype=scala
@@ -95,7 +100,7 @@ let g:material_theme_style = 'ocean-community'
 let g:lightline = { 'colorscheme': 'material_vim' }
 
 " FZF Hoogle
-let g:hoogle_fzf_cache_file = '~/.cache/fzf-hoogle/cache.json'
+" let g:hoogle_fzf_cache_file = '~/.cache/fzf-hoogle/cache.json'
 nnoremap <leader>h :Hoogle <CR>
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.

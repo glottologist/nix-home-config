@@ -84,6 +84,7 @@ in
       glot = "cd ~/development/glottologist";
       ont = "cd ~/development/ontologi";
       int = "cd ~/development/intendaglobal";
+      intplat = "cd ~/development/intendaglobal/platform";
       ref = "cd ~/development/reference";
 
     };

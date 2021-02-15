@@ -16,8 +16,8 @@ let
     coc-yank                # yank plugin for CoC
     ctrlsf-vim              # edit file in place after searching with ripgrep
     dhall-vim               # Syntax highlighting for Dhall lang
-    fzf-hoogle              # search hoogle with fzf
-    fzf-vim                 # fuzzy finder
+    # fzf-hoogle              # search hoogle with fzf
+    # fzf-vim                 # fuzzy finder
     ghcid                   # ghcid for Haskell
     lightline-vim           # configurable status line (can be used by coc)
     material-vim            # modern theme with true colors support
@@ -55,6 +55,9 @@ let
     syntastic           # Syntax checker for languages
     ghc-mod-vim             # Command line tool to analyse haskell source
     ultisnips
+    popup-nvim
+    plenary-nvim
+    telescope-nvim
   ] ++ overriddenPlugins;
 
   baseConfig    = builtins.readFile ./config.vim;
