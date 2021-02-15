@@ -48,6 +48,7 @@ in
       lar  = "ls -laR";
       mfix = "mill mono.__.fix --rules OrganizeImports && mill mono._.reformat";
       ".." = "cd ..";
+      "-" = "cd - ";
       ping = "prettyping";
       k = "kubectl ";
       h = "history";

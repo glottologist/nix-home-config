@@ -38,6 +38,7 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeDirArrows = 1
 
+
 " Nerd commenter
 filetype plugin on
 
@@ -53,6 +54,20 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Clean"     : "ᵅ",
     \ "Unknown"   : "?"
     \ }
+ 
+
+" NerdTree automatically open 
+autocmd StdinReadPre * let s:std_in=1
+autocmd VImEnter * if argc() == 0 && !exists("s:std_in") | NERDTree endif
+
+" NerdTree automatically close
+let g:NERDTreeQuitOnOpen = 1 
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif 
+
+" NerdTree Deleting Files
+let g:NERDTreeAutoDeleteBuffer = 1 
+
+
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
